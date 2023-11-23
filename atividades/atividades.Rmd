@@ -1,0 +1,126 @@
+---
+title: "Atividades"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Relembrando a estatística geral
+
+## Delineamento inteiramente casualizado
+
+### Croqui 
+
+Escreva o código para gerar um croqui de 7 tratamentos e 5 repetições em dic. 
+
+```{r A1, exercise=TRUE}
+
+```
+
+### Exercise with Code
+
+*Here's an exercise with some prepopulated code as well as `exercise.lines = 5` to provide a bit more initial room to work.*
+
+Now write a function that adds any two numbers and then call it:
+
+```{r add-function, exercise=TRUE, exercise.lines = 5}
+add <- function() {
+  
+}
+```
+
+## Comparação de médias
+
+## Pressuposições da ANOVA
+
+## Regressão polinomial
+
+## Delineamento em blocos casualizados 
+
+### Croqui 
+
+Escreva o código para gerar um croqui de 5 tratamentos e 5 repetições em dbc. 
+
+```{r A2, exercise=TRUE}
+
+```
+
+
+## Delineamento quadrado latino 
+
+### Croqui 
+
+Escreva o código para gerar um croqui de 6 tratamentos em dql. 
+
+```{r A3, exercise=TRUE}
+
+```
+
+
+
+## Esquema fatorial
+
+### Croqui 
+
+Um experimento será realizado em casa de vegetação visando estabelecer a relação entre genótipos de batatas e diferentes doses de Uréia a ser aplicada. Para isso o pesquisador pede que você desenhe um possível croqui para esse experimento. Serão utilizados 4 genótipos e 4 doses de uréia. Escreva o código para gerar um croqui. 
+
+
+```{r A4, exercise=TRUE}
+
+```
+
+
+## Esquema parcelas subdivididas
+
+### Croqui 
+
+Um experimento será realizado em campo visando estabelecer a relação entre diferentes cortes de cana (cana planta e cana soca) e diferentes métodos de sulcos (simples e duplo). Para isso o pesquisador pede que você desenhe um possível croqui para esse experimento. Serão utilizados 10 repetições. Escreva o código para gerar um possível croqui. 
+
+
+```{r A5, exercise=TRUE}
+
+```
+
+
+
+### Exercise with Hint
+
+*Here's an exercise where the chunk is pre-evaluated via the `exercise.eval` option (so the user can see the default output we'd like them to customize). We also add a "hint" to the correct solution via the chunk immediate below labeled `print-limit-hint`.*
+
+Modify the following code to limit the number of rows printed to 5:
+
+```{r print-limit, exercise=TRUE, exercise.eval=TRUE}
+mtcars
+```
+
+```{r print-limit-hint}
+head(mtcars)
+```
+
+### Quiz
+
+*You can include any number of single or multiple choice questions as a quiz. Use the `question` function to define a question and the `quiz` function for grouping multiple questions together.*
+
+Some questions to verify that you understand the purposes of various base and recommended R packages:
+
+```{r quiz}
+quiz(
+  question("Which package contains functions for installing other R packages?",
+    answer("base"),
+    answer("tools"),
+    answer("utils", correct = TRUE),
+    answer("codetools")
+  ),
+  question("Which of the R packages listed below are used to create plots?",
+    answer("lattice", correct = TRUE),
+    answer("tools"),
+    answer("stats"),
+    answer("grid", correct = TRUE)
+  )
+)
+```
+
